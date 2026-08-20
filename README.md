@@ -23,7 +23,7 @@ schema-constrained structured output. Because that data feeds payroll, the model
 to the database: it parses only and returns a preview a human reviews, while a separate
 permission-fenced procedure performs the write.
 
-🌱 Currently going deeper on multi-agent orchestration, evaluation, and MCP integrations.
+🌱 Currently going deeper on agent evaluation, observability, and MCP integrations.
 
 ---
 
@@ -34,8 +34,10 @@ permission-fenced procedure performs the write.
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-FF5A50?style=for-the-badge&logoColor=white)
+![OpenAI Agents SDK](https://img.shields.io/badge/OpenAI_Agents_SDK-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=claude&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-6566F1?style=for-the-badge&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
@@ -63,6 +65,22 @@ permission-fenced procedure performs the write.
 ---
 
 ## Projects
+
+### 🔍 [deep-research-agent](https://github.com/NakitaDev/deep-research-agent)
+
+![OpenAI Agents SDK](https://img.shields.io/badge/OpenAI_Agents_SDK-412991?style=flat-square&logo=openai&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-6566F1?style=flat-square&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-F97316?style=flat-square&logo=gradio&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+A multi-agent research pipeline on the OpenAI Agents SDK: a planner turns a question into
+search terms with reasoning, searches run in parallel, a writer synthesizes them into a
+long-form report, and a final agent delivers it by email or push notification.
+
+The interesting part is that it runs on OpenRouter rather than OpenAI. That meant switching
+the SDK to Chat Completions mode and replacing the hosted web-search tool with a direct
+Serper call, since OpenRouter supports neither — working out which parts of an agent
+framework are provider-agnostic and which are quietly coupled to one vendor.
 
 ### 🤖 [langchain-sidekick](https://github.com/NakitaDev/langchain-sidekick)
 
