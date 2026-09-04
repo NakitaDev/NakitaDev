@@ -4,33 +4,27 @@
 
 Civil engineer turned AI engineer. I build systems where model output has to hold up under
 scrutiny: document extraction that feeds payroll, agents that pause for human approval before
-acting, retrieval chains that stay grounded in a real knowledge base.
+acting, and serverless AI applications backed by automated Infrastructure-as-Code delivery[cite: 4].
 
 Most of my production work lives in a private client repository. What's here is the public
-half — the projects where I was working out how agents, tools, and retrieval actually fit
-together.
+half — the projects where I was working out how agents, tools, cloud infrastructure, and CI/CD pipelines actually fit together[cite: 4].
 
 📫 **atichat.cs@gmail.com** · 📍 Bangkok, Thailand
 
 ---
 
-## What I'm working on
-
-🔭 Shipped a staff-operations platform for a Thai restaurant chain — solo build, six weeks,
-covering attendance, scheduling, payroll, inventory, and HR. Its AI layer turns supplier
-invoice photos, delivery-platform CSVs, and purchase PDFs into typed database rows using
-schema-constrained structured output. Because that data feeds payroll, the model never writes
-to the database: it parses only and returns a preview a human reviews, while a separate
-permission-fenced procedure performs the write.
-
-🌱 Currently going deeper on agent evaluation, observability, and MCP integrations.
-
----
-
 ## Tech Stack
+
+**Frontend & Full Stack**
+
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 **LLM & Agents**
 
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white)
 ![CrewAI](https://img.shields.io/badge/CrewAI-FF5A50?style=for-the-badge&logoColor=white)
@@ -38,33 +32,43 @@ permission-fenced procedure performs the write.
 ![MCP](https://img.shields.io/badge/MCP-000000?style=for-the-badge&logo=modelcontextprotocol&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_API-D97757?style=for-the-badge&logo=claude&logoColor=white)
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-6566F1?style=for-the-badge&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
-**Data & Storage**
+**Cloud Infrastructure & DevOps**
 
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B4A?style=for-the-badge&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Langfuse](https://img.shields.io/badge/Langfuse-000000?style=for-the-badge&logo=langfuse&logoColor=white)
+
+**Backend & Data**
+
+![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-
-**Languages & Tooling**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Gradio](https://img.shields.io/badge/Gradio-F97316?style=for-the-badge&logo=gradio&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B4A?style=for-the-badge&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)
 
 ---
 
 ## Projects
+
+### 🤖 [digital-twin](https://github.com/NakitaDev/digital-twin)[cite: 4]
+
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+An interactive, production-grade AI Digital Twin conversational companion representing me to website visitors and potential employers[cite: 4]. Built with Next.js 16 and FastAPI, running on fully serverless AWS infrastructure (CloudFront, S3 static hosting, API Gateway HTTP API, Lambda via Mangum)[cite: 4].
+
+Features dual-LLM resilience with AWS Bedrock as primary and OpenRouter as automated fallback, stateful session memory backed by Amazon S3, and dark-mode first UI[cite: 4]. Provisioned entirely via Terraform Infrastructure-as-Code with remote S3/DynamoDB state locking and automated multi-environment CI/CD via GitHub Actions using keyless AWS OIDC authentication[cite: 4].
 
 ### 🔍 [deep-research-agent](https://github.com/NakitaDev/deep-research-agent)
 
@@ -122,15 +126,6 @@ chunking, embedding generation, and persistence to a vector store (ChromaDB loca
 for hosted indexes) — with a history-aware retrieval
 chain that reformulates follow-up questions against prior conversation context instead of
 treating them as isolated queries.
-
-### 👤 [twin](https://github.com/NakitaDev/twin)
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![No Framework](https://img.shields.io/badge/no_framework-by_design-6B7280?style=flat-square)
-
-A digital-twin chatbot built deliberately without an agent framework — raw HTTP requests and
-hand-rolled tool handling. I built it this way on purpose: it's easier to reason about what an
-agent framework is doing for you once you've written the loop yourself.
 
 ---
 
