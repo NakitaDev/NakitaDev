@@ -4,10 +4,10 @@
 
 Civil engineer turned AI engineer. I build systems where model output has to hold up under
 scrutiny: document extraction that feeds payroll, agents that pause for human approval before
-acting, and serverless AI applications backed by automated Infrastructure-as-Code delivery[cite: 4].
+acting, and serverless AI applications backed by automated Infrastructure-as-Code delivery.
 
 Most of my production work lives in a private client repository. What's here is the public
-half — the projects where I was working out how agents, tools, cloud infrastructure, and CI/CD pipelines actually fit together[cite: 4].
+half — the projects where I was working out how agents, tools, cloud infrastructure, and CI/CD pipelines actually fit together.
 
 📫 **atichat.cs@gmail.com** · 📍 Bangkok, Thailand
 
@@ -57,7 +57,7 @@ half — the projects where I was working out how agents, tools, cloud infrastru
 
 ## Projects
 
-### 🤖 [digital-twin](https://github.com/NakitaDev/digital-twin)[cite: 4]
+### 🤖 [digital-twin](https://github.com/NakitaDev/digital-twin)
 
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
@@ -66,9 +66,9 @@ half — the projects where I was working out how agents, tools, cloud infrastru
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-An interactive, production-grade AI Digital Twin conversational companion representing me to website visitors and potential employers[cite: 4]. Built with Next.js 16 and FastAPI, running on fully serverless AWS infrastructure (CloudFront, S3 static hosting, API Gateway HTTP API, Lambda via Mangum)[cite: 4].
+An interactive, production-grade AI Digital Twin conversational companion representing me to website visitors and potential employers. Built with Next.js 16 and FastAPI, running on fully serverless AWS infrastructure (CloudFront, S3 static hosting, API Gateway HTTP API, Lambda via Mangum).
 
-Features dual-LLM resilience with AWS Bedrock as primary and OpenRouter as automated fallback, stateful session memory backed by Amazon S3, and dark-mode first UI[cite: 4]. Provisioned entirely via Terraform Infrastructure-as-Code with remote S3/DynamoDB state locking and automated multi-environment CI/CD via GitHub Actions using keyless AWS OIDC authentication[cite: 4].
+Features dual-LLM resilience with AWS Bedrock as primary and OpenRouter as automated fallback, stateful session memory backed by Amazon S3, and dark-mode first UI. Provisioned entirely via Terraform Infrastructure-as-Code with remote S3/DynamoDB state locking and automated multi-environment CI/CD via GitHub Actions using keyless AWS OIDC authentication.
 
 ### 🔍 [deep-research-agent](https://github.com/NakitaDev/deep-research-agent)
 
