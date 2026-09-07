@@ -112,21 +112,22 @@ Four agents run in sequence — lead, backend, frontend, test — each handing o
 Generated code executes inside an ephemeral Docker container rather than on the host, and the
 sandbox is wiped and rebuilt on every run, so the agents only ever have the standard library
 plus what I've explicitly installed.
-
 ### 🗡️ [hollow-lore-master](https://github.com/NakitaDev/hollow-lore-master)
 
-![LangChain](https://img.shields.io/badge/LangChain%20LCEL-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B4A?style=flat-square&logoColor=white)
 ![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat-square&logo=pinecone&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=claude&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter_API-6366F1?style=flat-square&logo=openai&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/HF_Spaces-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
 A retrieval-augmented Q&A chatbot answering open-ended lore questions about Hollow Knight,
 grounded in a scraped wiki knowledge base. Covers the full pipeline — scraping, recursive
 chunking, embedding generation, and persistence to a vector store (ChromaDB locally, Pinecone
-for hosted indexes) — with a history-aware retrieval
-chain that reformulates follow-up questions against prior conversation context instead of
-treating them as isolated queries.
+for hosted indexes) — orchestrated with a LangGraph StateGraph and short-term checkpointer
+memory that delivers real-time token streaming and grounded answers with explicit source
+citations.
+
+
 
 ---
 
